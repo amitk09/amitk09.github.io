@@ -684,7 +684,7 @@
     </section>
     <footer class="footer">© <span id="year">2026</span> Amit Kumar • Build. Test. Break. Improve. Repeat.
     </footer>
-    <button class="editToggle" id="editToggle">✎ Edit Profile</button>
+    <!-- <button class="editToggle" id="editToggle">✎ Edit Profile</button>
     <aside class="editor" id="editor">
         <h3>Portfolio Editor</h3>
         <p>Make changes, then download the updated HTML and replace the file in GitHub. Image uploads are embedded into
@@ -703,7 +703,7 @@
         $('#reset').onclick = () => { cfg = { ...defaults }; localStorage.removeItem('portfolioConfig'); apply() };
         $('#downloadHtml').onclick = () => { let source = '<!doctype html>\n' + document.documentElement.outerHTML; source = source.replace(/const defaults=\{.*?\};/s, 'const defaults=' + JSON.stringify(cfg) + ';'); source = source.replace('class="editor open"', 'class="editor"'); const blob = new Blob([source], { type: 'text/html' }), a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'index.html'; a.click(); URL.revokeObjectURL(a.href) };
         $('#year').textContent = new Date().getFullYear(); const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('show') }), { threshold: .15 }); document.querySelectorAll('.reveal').forEach(e => io.observe(e));
-    </script>
+    </script> -->
 
 
 </body></html>
